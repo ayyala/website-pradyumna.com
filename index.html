@@ -50,7 +50,7 @@
       <button class="md:hidden text-2xl text-primary" id="menu-toggle">☰</button>
     </div>
     <!-- Mobile Menu -->
-    <div class="md:hidden hidden flex-col items-center space-y-4 pb-4" id="mobile-menu">
+    <div class="md:hidden hidden flex-col items-center" id="mobile-menu">
       <a href="#home" class="hover:text-primary transition-colors">Home</a>
       <a href="#about" class="hover:text-primary transition-colors">About Me</a>
       <a href="#cv" class="hover:text-primary transition-colors">CV</a>
@@ -136,8 +136,7 @@
             Electronics and Instrumentation
             Technology</h3>
           <p class="text-gray-600 dark:bg-gray-800 dark:text-gray-300">Visvesvaraya Technological University, 2006</p>
-          <p class="mt-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300"> I topped the University (secured 4th rank
-            out of a pool of more than 25,000
+          <p class="mt-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300"> Secured a gold medal for ranking first in class.
             students) </p>
         </div>
         <!-- Repeat for additional education entries -->
@@ -398,6 +397,15 @@
       } else {
         setLightMode();
       }
+    });
+  </script>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      menuToggle.classList.toggle('active');
     });
   </script>
 </body>
