@@ -50,7 +50,7 @@
       <button class="md:hidden text-2xl text-primary" id="menu-toggle">☰</button>
     </div>
     <!-- Mobile Menu -->
-    <div class="md:hidden hidden flex-col items-center" id="mobile-menu">
+    <div class="md:hidden hidden flex-col items-center space-y-4 pb-4" id="mobile-menu">
       <a href="#home" class="hover:text-primary transition-colors">Home</a>
       <a href="#about" class="hover:text-primary transition-colors">About Me</a>
       <a href="#cv" class="hover:text-primary transition-colors">CV</a>
@@ -136,7 +136,8 @@
             Electronics and Instrumentation
             Technology</h3>
           <p class="text-gray-600 dark:bg-gray-800 dark:text-gray-300">Visvesvaraya Technological University, 2006</p>
-          <p class="mt-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300"> Secured a gold medal for ranking first in class.
+          <p class="mt-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300"> I topped the University (secured 4th rank
+            out of a pool of more than 25,000
             students) </p>
         </div>
         <!-- Repeat for additional education entries -->
@@ -342,7 +343,7 @@
       <ul class="space-y-4">
         <li class="text-gray-700 dark:bg-gray-900 dark:text-gray-300">
           <span class="font-semibold">Email:</span>
-          <a class="text-primary underline dark:bg-gray-900 dark:text-gray-300">contact AT [This Domain] DOT com</a>
+          <a class="text-primary underline dark:bg-gray-900 dark:text-gray-300">a [DOT] pradyu [at] gmail [DOT] com</a>
         </li>
 
       </ul>
@@ -353,7 +354,9 @@
   <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800 dark:text-gray-300">
     <div class="container mx-auto px-4 text-center">
 
-      <p class="text-gray-700 mb-6 dark:bg-gray-800 dark:text-gray-300"> © 2006-2024 Pradyumna Ayyalasomayajula </p>
+      <p class="text-gray-700 mb-6 dark:bg-gray-800 dark:text-gray-300"> © 2006-2024 Pradyumna Ayyalasomayajula</p>
+      <p class="text-gray-700 mb-6 dark:bg-gray-800 dark:text-gray-300"> Hosted on <a href="https://pages.github.com/"
+        class="text-primary underline dark:bg-gray-900 dark:text-gray-300"> Github </a></p>
 
     </div>
   </section>
@@ -397,15 +400,6 @@
       } else {
         setLightMode();
       }
-    });
-  </script>
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-      menuToggle.classList.toggle('active');
     });
   </script>
 </body>
